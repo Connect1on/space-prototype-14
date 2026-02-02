@@ -36,9 +36,6 @@
           - id: DrinkColaCan
           - id: FoodSnackChocolateBar
             weight: 0.7
-          - id: FoodMeat
-            weight: 0.8
-            amount: 2
           - id: FoodSoupMushroom
             weight: 0.95
           - id: FoodMealEnchiladas

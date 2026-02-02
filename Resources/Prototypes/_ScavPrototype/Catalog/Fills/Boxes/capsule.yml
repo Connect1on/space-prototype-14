@@ -43,9 +43,6 @@
             weight: 0.5
           - id: FoodSnackChocolateBar
             weight: 0.4
-          - id: FoodMeat
-            weight: 0.4
-            amount: 2
           - id: FoodSoupMushroom
             weight: 0.5
           - id: FoodMealEnchiladas
