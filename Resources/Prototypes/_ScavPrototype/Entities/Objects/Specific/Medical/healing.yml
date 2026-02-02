@@ -1,0 +1,22 @@
+- type: entity
+  id: Ointment6
+  parent: Ointment
+  components:
+  - type: Stack
+    stackType: Ointment
+    count: 6
+
+- type: entity
+  id: Brutepack6
+  parent: Brutepack
+  components:
+  - type: Stack
+    stackType: Brutepack
+    count: 6
+
+- type: entity
+  id: Gauze6
+  parent: Gauze
+  components:
+  - type: Stack
+    count: 6
