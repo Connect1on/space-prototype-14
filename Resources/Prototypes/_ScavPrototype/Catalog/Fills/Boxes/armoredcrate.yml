@@ -1,0 +1,54 @@
+- type: entity
+  id: BoxWeaponRandom
+  name: укреплённый ящик
+  parent: BaseStorageItem
+  description: Оружейный ящик
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,4,3
+    storageOpenSound: /Audio/Items/toolbox_open.ogg
+    storageCloseSound: /Audio/Items/toolbox_close.ogg
+    storageInsertSound: /Audio/Items/toolbox_insert.ogg
+    storageRemoveSound: /Audio/Items/toolbox_remove.ogg
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        # Random lighting item GroupSelector
+        - !type:GroupSelector
+          rolls: 2
+          children:
+          - id: KitchenKnife
+            weight: 0.1
+          - id: WeaponShotgunImprovisedLoaded
+            weight: 0.08
+          - id: CombatKnife
+            weight: 0.06
+          - id: WeaponShotgunKammerer
+            weight: 0.04
+          - id: Pickaxe
+            weight: 0.03
+          - id: FireAxe
+            weight: 0.01
+          - id: BaseBallBat
+          - id: FoodSnackNutribrick
+          - id: DrinkWaterBottleFull
+            weight: 0.85
+          - id: FoodMeatCooked
+          - id: DrinkColaCan
+          - id: Gauze6
+            weight: 0.5
+          - id: Brutepack6
+            weight: 0.5
+          - id: Ointment6
+            weight: 0.5
+          - id: SheetSteel10
+          - id: MaterialWoodPlank10
+
