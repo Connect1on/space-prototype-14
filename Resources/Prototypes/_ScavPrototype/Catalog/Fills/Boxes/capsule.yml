@@ -1,0 +1,68 @@
+- type: entity
+  id: CapsuleRandom
+  name: Капсула
+  parent: BaseStorageItem
+  description: Содержит разные припасы
+  components:
+  - type: Sprite
+    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    state: icon
+  - type: Item
+    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+  - type: Storage
+    maxItemSize: Large
+    grid:
+    - 0,0,2,7
+    storageOpenSound: /Audio/Items/toolbox_open.ogg
+    storageCloseSound: /Audio/Items/toolbox_close.ogg
+    storageInsertSound: /Audio/Items/toolbox_insert.ogg
+    storageRemoveSound: /Audio/Items/toolbox_remove.ogg
+  - type: EntityTableContainerFill
+    containers:
+      storagebase: !type:AllSelector
+        children:
+        # Random lighting item GroupSelector
+        - !type:GroupSelector
+          rolls: 2
+          children:
+          - id: FoodSnackChips
+            weight: 0.5
+          - id: FoodMeatCooked
+            weight: 0.5
+          - id: FoodMeatChickenCutletCooked
+            weight: 0.5
+          - id: Gauze6
+            weight: 0.8
+          - id: Brutepack6
+            weight: 0.8
+          - id: Ointment6
+            weight: 0.5
+          - id: DrinkWaterBottleFull
+            weight: 0.4
+          - id: DrinkColaCan
+            weight: 0.5
+          - id: FoodSnackChocolateBar
+            weight: 0.4
+          - id: FoodMeat
+            weight: 0.4
+            amount: 2
+          - id: FoodSoupMushroom
+            weight: 0.5
+          - id: FoodMealEnchiladas
+            weight: 0.5
+          - id: DrinkMilkCarton
+            weight: 0.5
+          - id: PowerCellSmall
+            weight: 0.8
+          - id: FlashlightLantern
+            weight: 0.5
+          - id: Pickaxe
+            weight: 0.25
+          - id: MiningDrill
+            weight: 0.15
+          - id: PowerCellMedium
+            weight: 0.5
+          - id: Defibrillator
+            weight: 0.15
+          - id: PowerCellHigh
+            weight: 0.25
