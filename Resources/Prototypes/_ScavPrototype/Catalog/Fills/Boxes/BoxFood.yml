@@ -12,7 +12,7 @@
   - type: Storage
     maxItemSize: Large
     grid:
-    - 0,0,3,3
+    - 0,0,5,5
     storageOpenSound: /Audio/Items/toolbox_open.ogg
     storageCloseSound: /Audio/Items/toolbox_close.ogg
     storageInsertSound: /Audio/Items/toolbox_insert.ogg
