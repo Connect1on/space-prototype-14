@@ -2,7 +2,7 @@
   id: BoxWeaponRandom
   name: укреплённый ящик
   parent: BaseStorageItem
-  description: Оружейный ящик
+  description: Довольно массивный ящик, что подтверждает его размер, иногда в них перевозят оружие, может стоит попытать счастье?
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi

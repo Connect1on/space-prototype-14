@@ -1,8 +1,8 @@
 - type: entity
   id: CapsuleRandom
-  name: Капсула
+  name: капсула
   parent: BaseStorageItem
-  description: Содержит разные припасы
+  description: капсула с припасами, такая капсула лучше всех подходит для перевозки снаряжения. Но никто не гарантирует, что кто-то вновь не забил её различным хламом.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi

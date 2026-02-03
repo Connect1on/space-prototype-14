@@ -1,0 +1,18 @@
+- type: entityTable
+  id: VarietyInstrumentScav
+  table: !type:GroupSelector
+    children:
+    - id: PowerCellSmall
+      weight: 0.8
+    - id: FlashlightLantern
+      weight: 0.5
+    - id: Pickaxe
+      weight: 0.25
+    - id: MiningDrill
+      weight: 0.15
+    - id: PowerCellMedium
+      weight: 0.5
+    - id: Defibrillator
+      weight: 0.15
+    - id: PowerCellHigh
+      weight: 0.25
