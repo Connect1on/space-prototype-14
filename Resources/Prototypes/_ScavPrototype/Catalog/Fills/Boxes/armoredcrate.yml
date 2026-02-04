@@ -25,30 +25,12 @@
         - !type:GroupSelector
           rolls: 2
           children:
-          - id: KitchenKnife
-            weight: 0.1
-          - id: WeaponShotgunImprovisedLoaded
-            weight: 0.08
-          - id: CombatKnife
-            weight: 0.06
-          - id: WeaponShotgunKammerer
-            weight: 0.04
-          - id: Pickaxe
-            weight: 0.03
-          - id: FireAxe
-            weight: 0.01
-          - id: BaseBallBat
-          - id: FoodSnackNutribrick
-          - id: DrinkWaterBottleFull
-            weight: 0.85
-          - id: FoodMeatCooked
-          - id: DrinkColaCan
-          - id: Gauze6
-            weight: 0.5
-          - id: Brutepack6
-            weight: 0.5
-          - id: Ointment6
-            weight: 0.5
+          - !type:NestedSelector
+            tableId: VarietyFoodAndWater
+          - !type:NestedSelector
+            tableId: VarietyBaseMedical
+            weight: 0.75
+          - !type:NestedSelector
+            tableId: VarietyWeaponScav
+            weight: 0.25
           - id: SheetSteel10
-          - id: MaterialWoodPlank10
-

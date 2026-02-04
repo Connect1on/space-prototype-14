@@ -25,38 +25,10 @@
         - !type:GroupSelector
           rolls: 2
           children:
-          - id: FoodSnackChips
-          - id: FoodMeatCooked
-          - id: FoodMeatChickenCutletCooked
-          - id: Gauze6
-          - id: Brutepack6
-          - id: Ointment6
-          - id: DrinkWaterBottleFull
-            weight: 0.8
-          - id: DrinkColaCan
-          - id: FoodSnackChocolateBar
-            weight: 0.7
-          - id: FoodSoupMushroom
-            weight: 0.95
-          - id: FoodMealEnchiladas
-            weight: 0.9
-          - id: DrinkMilkCarton
-            weight: 0.85
-          - id: SheetSteel10
-            weight: 0.6
-          - id: MaterialWoodPlank10
-            weight: 0.6
-          - id: PowerCellSmall
-            weight: 0.35
-          - id: FlashlightLantern
-            weight: 0.25
-          - id: Pickaxe
-            weight: 0.1
-          - id: MiningDrill
-            weight: 0.05
-          - id: PowerCellMedium
-            weight: 0.25
-          - id: Defibrillator
-            weight: 0.05
-          - id: PowerCellHigh
-            weight: 0.1
+          - !type:NestedSelector
+            tableId: VarietyFoodAndWater
+          - !type:NestedSelector
+            tableId: VarietyBaseMedical
+          - !type:NestedSelector
+            tableId: VarietyInstrumentScav
+            weight: 0.5

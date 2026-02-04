@@ -3,16 +3,113 @@
   table: !type:GroupSelector
     children:
     - id: PowerCellSmall
-      weight: 0.8
-    - id: FlashlightLantern
-      weight: 0.5
-    - id: Pickaxe
-      weight: 0.25
-    - id: MiningDrill
-      weight: 0.15
     - id: PowerCellMedium
-      weight: 0.5
-    - id: Defibrillator
-      weight: 0.15
+      weight: 0.75
     - id: PowerCellHigh
+      weight: 0.5
+    - id: FlashlightLantern
+      weight: 0.75
+    - id: ImprovisedWirecutter
+      weight: 0.75
+    - id: ImprovisedCrowbar
+      weight: 0.75
+    - id: ImprovisedScrewdriver
+      weight: 0.75
+    - id: Pickaxe
+      weight: 0.5
+    - id: Wirecutter
+      weight: 0.5
+    - id: CrowbarOrange
+      weight: 0.5
+    - id: Screwdriver
+      weight: 0.5
+    - id: MiningDrill
+      weight: 0.25
+    - id: PowerDrill
+      weight: 0.25
+    - id: Defibrillator
+      weight: 0.25
+
+
+- type: entityTable
+  id: VarietySyringeScav
+  table: !type:GroupSelector
+    children:
+    - id: SyringeBicaridine
+    - id: SyringeDermaline
+    - id: SyringeSaline
+    - id: SyringeTranexamicAcid
+      weight: 0.75
+    - id: SyringeHyronalin
+      weight: 0.75
+    - id: SyringeEphedrine
+      weight: 0.75
+    - id: SyringeStimulants
+      weight: 0.25
+    - id: DisposableSyringeHeroin
+      weight: 0.25
+
+- type: entityTable
+  id: VarietyPillCanisterScav
+  table: !type:GroupSelector
+    children:
+    - id: PillCanisterBicaridine
+    - id: PillCanisterDermaline
+    - id: PillCanisterDexalin
+    - id: PillCanisterDylovene
+    - id: PillCanisterHyronalin
+    - id: PillCanisterKelotane
+    - id: PillCanisterTricordrazine
+
+- type: entityTable
+  id: VarietyBaseMedical
+  table: !type:GroupSelector
+    children:
+    - id: Gauze6
+    - id: Brutepack6
+    - id: Ointment6
+    - id: Bloodpack
+      weight: 0.5
+
+- type: entityTable
+  id: VarietyFoodAndWater
+  table: !type:GroupSelector
+    children:
+    - id: FoodSnackChips
+    - id: FoodMeatCooked
+    - id: FoodMeatChickenCutletCooked
+    - id: FoodSnackChocolateBar
+    - id: FoodSoupMushroom
+    - id: FoodMealEnchiladas
+    - id: FoodBreakfastEnglish
+    - id: FoodBreakfastAmerican
+    - id: FoodBreadBaguette
+    - id: FoodBakedBrownie
+    - id: DrinkWaterBottleFull
+    - id: DrinkColaCan
+    - id: DrinkMilkCarton
+    - id: DrinkJuiceOrangeCarton
+    - id: DrinkBeerCan
+    - id: DrinkCoffeeLiqueurBottleFull
+    - id: DrinkVodkaBottleFull
+
+- type: entityTable
+  id: VarietyWeaponScav
+  table: !type:GroupSelector
+    children:
+    - id: KitchenKnife
+    - id: BaseBallBat
+    - id: WeaponShotgunImprovisedLoaded
+      weight: 0.9
+    - id: CombatKnife
+      weight: 0.9
+    - id: WeaponPistolMk58
+      weight: 0.8
+    - id: HydroponicsToolHatchet
+      weight: 0.8
+    - id: WeaponShotgunKammerer
+      weight: 0.75
+    - id: Pickaxe
+      weight: 0.5
+    - id: FireAxe
       weight: 0.25

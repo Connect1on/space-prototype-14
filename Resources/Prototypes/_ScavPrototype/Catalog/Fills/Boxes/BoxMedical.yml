@@ -2,7 +2,7 @@
   id: BoxMedicalRandom
   name: медицинский ящик
   parent: BaseStorageItem
-  description: Медицинский ящик
+  description: Ящик перевозящий медицинские принадлежности для оказания первой помощи. Дезинфицирующие средства в комплект не входят.
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
@@ -25,32 +25,13 @@
         - !type:GroupSelector
           rolls: 2
           children:
-          - id: Gauze6
+          - !type:NestedSelector
+            tableId: VarietyBaseMedical
+          - !type:NestedSelector
+            tableId: VarietySyringeScav
             weight: 0.75
-          - id: Brutepack6
-          - id: Ointment6
-            weight: 0.9
-          - id: PillCanisterTricordrazine
-            weight: 0.85
-          - id: PillCanisterDexalin
-            weight: 0.6
-          - id: SyringeInaprovaline
-            weight: 0.6
-          - id: PillCanisterBicaridine
-            weight: 0.5
-          - id: PillCanisterDermaline
-            weight: 0.5
-          - id: SyringeBicaridine
-            weight: 0.5
-          - id: SyringeDermaline
-            weight: 0.5
-          - id: SyringeSaline
-            weight: 0.4
-          - id: Bloodpack
-            weight: 0.25
-          - id: FoodSnackNutribrick
-            weight: 0.25
-          - id: DisposableSyringeHeroin
-            weight: 0.15
+          - !type:NestedSelector
+            tableId: VarietyPillCanisterScav
+            weight: 0.75
           - id: Defibrillator
             weight: 0.1
