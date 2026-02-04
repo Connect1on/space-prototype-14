@@ -28,6 +28,8 @@
           - !type:NestedSelector
             tableId: VarietyFoodAndWater
           - !type:NestedSelector
+            tableId: VarietyCraftingStuff
+          - !type:NestedSelector
             tableId: VarietyBaseMedical
             weight: 0.75
           - !type:NestedSelector

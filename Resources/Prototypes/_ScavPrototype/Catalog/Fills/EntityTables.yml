@@ -113,3 +113,11 @@
       weight: 0.5
     - id: FireAxe
       weight: 0.25
+
+- type: entityTable
+  id: VarietyCraftingStuff
+  table: !type:GroupSelector
+    children:
+    - id: SheetSteel10
+    - id: SheetPlactic10
+    - id: CableApcStack10
