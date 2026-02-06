@@ -65,9 +65,9 @@
   id: VarietyBaseMedical
   table: !type:GroupSelector
     children:
-    - id: Gauze6
-    - id: Brutepack6
-    - id: Ointment6
+    - id: Gauze5
+    - id: Brutepack5
+    - id: Ointment5
     - id: Bloodpack
       weight: 0.5
 
