@@ -1,14 +1,12 @@
 - type: entity
   id: CapsuleRandom
   name: капсула
-  parent: BaseStorageItem
+  parent: BaseStorageScavSpecial
   description: капсула с припасами, такая капсула лучше всех подходит для перевозки снаряжения. Но никто не гарантирует, что кто-то вновь не забил её различным хламом.
   components:
   - type: Sprite
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    sprite: _ScavPrototype/Objects/Structures/Furniture/box.rsi
     state: icon
-  - type: Item
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
   - type: Storage
     maxItemSize: Large
     grid:

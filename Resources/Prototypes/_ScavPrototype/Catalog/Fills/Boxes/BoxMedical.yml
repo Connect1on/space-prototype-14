@@ -1,14 +1,12 @@
 - type: entity
   id: BoxMedicalRandom
   name: медицинский ящик
-  parent: BaseStorageItem
+  parent: BaseStorageScavSpecial
   description: Ящик перевозящий медицинские принадлежности для оказания первой помощи. Дезинфицирующие средства в комплект не входят.
   components:
   - type: Sprite
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    sprite: _ScavPrototype/Objects/Structures/Furniture/box.rsi
     state: icon
-  - type: Item
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
   - type: Storage
     maxItemSize: Large
     grid:

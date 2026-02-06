@@ -1,14 +1,12 @@
 - type: entity
   id: BoxFoodRandom
   name: ящик
-  parent: BaseStorageItem
+  parent: BaseStorageScavSpecial
   description: Обычный ящик со снабжением, возможно в нём ещё остались полезные инструменты или еда.
   components:
   - type: Sprite
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
+    sprite: _ScavPrototype/Objects/Structures/Furniture/box.rsi
     state: icon
-  - type: Item
-    sprite: Objects/Tools/Toolboxes/toolbox_red.rsi
   - type: Storage
     maxItemSize: Large
     grid:
