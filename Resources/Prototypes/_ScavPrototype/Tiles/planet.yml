@@ -19,3 +19,36 @@
   heatCapacity: 10000
   weather: true
   indestructible: true
+
+- type: tile
+  id: FloorClayPlanetGravel
+  name: глина
+  sprite: /Textures/_ScavPrototype/Tiles/Planet/GravelLands/clay.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepGrass
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorScrapPlanet
+  name: металлические обломки
+  sprite: /Textures/_ScavPrototype/Tiles/Planet/GravelLands/scrap_metall.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepPlating
+  heatCapacity: 10000
+  weather: true
+  indestructible: true
+
+- type: tile
+  id: FloorStonePlanet
+  name: камень
+  sprite: /Textures/_ScavPrototype/Tiles/Planet/GravelLands/stone.png
+  isSubfloor: true
+  footstepSounds:
+    collection: FootstepAsteroid
+  heatCapacity: 10000
+  weather: true
+  indestructible: true

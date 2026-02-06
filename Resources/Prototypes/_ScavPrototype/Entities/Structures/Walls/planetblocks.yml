@@ -58,6 +58,20 @@
   name: почва
   description: Это почва.
   components:
+  - type: Icon
+    sprite: _ScavPrototype/Structures/Walls/dirt.rsi
+  - type: Sprite
+    sprite: _ScavPrototype/Structures/Walls/dirt.rsi
+    layers:
+    - state: dirt
+    - map: [ "enum.EdgeLayer.South" ]
+      state: dirt_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: dirt_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: dirt_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: dirt_west
   - type: Destructible
     thresholds:
     - trigger:
@@ -78,6 +92,20 @@
   name: гравий
   description: Это гравий.
   components:
+  - type: Icon
+    sprite: _ScavPrototype/Structures/Walls/gravel.rsi
+  - type: Sprite
+    sprite: _ScavPrototype/Structures/Walls/gravel.rsi
+    layers:
+    - state: gravel
+    - map: [ "enum.EdgeLayer.South" ]
+      state: gravel_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: gravel_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: gravel_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: gravel_west
   - type: Destructible
     thresholds:
     - trigger:
@@ -97,6 +125,21 @@
   parent: Gravel
   name: глина
   description: Это глина.
+  components:
+  - type: Icon
+    sprite: _ScavPrototype/Structures/Walls/clay.rsi
+  - type: Sprite
+    sprite: _ScavPrototype/Structures/Walls/clay.rsi
+    layers:
+    - state: clay
+    - map: [ "enum.EdgeLayer.South" ]
+      state: clay_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: clay_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: clay_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: clay_west
 
 - type: entity
   id: LightRock
@@ -104,6 +147,20 @@
   name: Легкий булыжник
   description: Это булыга.
   components:
+  - type: Icon
+    sprite: _ScavPrototype/Structures/Walls/stone.rsi
+  - type: Sprite
+    sprite: _ScavPrototype/Structures/Walls/stone.rsi
+    layers:
+    - state: stone
+    - map: [ "enum.EdgeLayer.South" ]
+      state: stone_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: stone_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: stone_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: stone_west
   - type: Destructible
     thresholds:
     - trigger:
@@ -124,6 +181,20 @@
   name: Металлолом
   description: Это гора металлического мусора.
   components:
+  - type: Icon
+    sprite: _ScavPrototype/Structures/Walls/scrap_metall.rsi
+  - type: Sprite
+    sprite: _ScavPrototype/Structures/Walls/scrap_metall.rsi
+    layers:
+    - state: scrap_metall
+    - map: [ "enum.EdgeLayer.South" ]
+      state: scrap_metall_south
+    - map: [ "enum.EdgeLayer.East" ]
+      state: scrap_metall_east
+    - map: [ "enum.EdgeLayer.North" ]
+      state: scrap_metall_north
+    - map: [ "enum.EdgeLayer.West" ]
+      state: scrap_metall_west
   - type: Destructible
     thresholds:
     - trigger:
